@@ -1,0 +1,27 @@
+#!/bin/sh
+export LANG="ru_RU.UTF-8"  # Localization
+
+# Variables for running app as native on wayland
+# Used and tested on ArchLinux
+export QT_QPA_PLATFORM="wayland"
+export LIBGL_ALWAYS_SOFTWARE="1"
+export MOZ_ENABLE_WAYLAND="1"
+
+
+alias sd='sway'
+alias ls='ls --color=auto'
+alias la='ls -lA --color=auto'
+alias po='sudo poweroff'
+
+alias psrc='pacman -Ss'
+alias plst='pacman -Q'
+
+alias pnst='sudo pacman -Sy'
+alias ppgr='sudo pacman -Syu'
+alias prmv='sudo pacman -R'
+alias armv='sudo pacman -R $(pacman -Qdtq)'
+
+PWD=`pwd`
+alias dr="$PWD/scripts/drun.sh"
+alias cwf="$PWD/scripts/connect_wifi.sh"
+alias swh="$PWD/scripts/swhelp.sh"
