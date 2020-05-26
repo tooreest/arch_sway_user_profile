@@ -1,0 +1,5 @@
+#run cat `pwd`/sys_cir_font >> /etc/vconsole.conf
+
+LOCALE=ru_RU.UTF-8
+KEYMAP=ru-mab
+FONT=ter-u16b
