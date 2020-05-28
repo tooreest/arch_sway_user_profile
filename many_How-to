@@ -1,0 +1,5 @@
+### SDDM
+sddm run ot startpc and russin locale
+systemctl enable sddm
+add to /etc/systemd/system/display-manager.service to section [Service] Environment=LANG=ru_RU.UTF-8
+
